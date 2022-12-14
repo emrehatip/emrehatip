@@ -1,6 +1,9 @@
 //@author EmreHatip
 
-      import java.util.Scanner;
+package Giris;
+import java.util.Scanner;
+public class CircleArea {
+    public static void main(String[] args) {
       double r, a, pi=3.14;
       Scanner input=new Scanner(System.in);
       System.out.println("Dairenin Yarıçapını Giriniz : ");
@@ -10,3 +13,5 @@
       System.out.println("Dairenin Çevresi: "+2*pi*r);
       System.out.println("Dairenin Tüm Alanı: "+pi*r*r);
       System.out.println(a+" Dereceli Daire Diliminin Alanı: "+pi*r*r*a/360);
+    }
+}
