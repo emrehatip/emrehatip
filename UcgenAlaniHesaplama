@@ -1,0 +1,25 @@
+//@author EmreHatip
+package Giris;
+import java.util.Scanner;
+public class UcgenAlanHesaplama {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        double a,b,c,d,alan;
+
+        System.out.println("ÜÇGEN ALAN HESAPLAMA PROGRAMI");
+        System.out.println("Üçgenin Birinci Kenar Uzunluğunu Giriniz : ");
+        a= input.nextDouble();
+        System.out.println("Birinci Kenar Uzunluğu : "+a);
+        System.out.println("İkinci Kenar Uzunluğunu Giriniz");
+        b= input.nextDouble();
+        System.out.println("İkinci Kenar Uzunluğu : "+b);
+        System.out.println("Üçüncü Kenar Uzunluğunu Giriniz");
+        c=input.nextDouble();
+        System.out.println("Üçüncü Kenar Uzunluğu : "+c);
+        d=(a+b+c)/2;
+        System.out.println("Üçgenin Çevresinin Uzunluğu: "+(a+b+c));
+        alan=Math.sqrt(d*(d-a)*(d-b)*(d-c));
+        System.out.println("Üçgenin Alanı: "+alan);
+
+    }
+}
