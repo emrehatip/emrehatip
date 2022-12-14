@@ -11,5 +11,6 @@ public class TaxiMeter {
     total=start+km*perkm;
     total=(total<=20)?20:total;
     System.out.println("ÖDENMESİ GEREKEN TUTAR: "+total+"TL");
+
     }
 }
