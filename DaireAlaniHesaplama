@@ -1,0 +1,12 @@
+//@author EmreHatip
+
+      import java.util.Scanner;
+      double r, a, pi=3.14;
+      Scanner input=new Scanner(System.in);
+      System.out.println("Dairenin Yarıçapını Giriniz : ");
+      r=input.nextDouble();
+      System.out.println("Alanını Öğrenmek İstediğiniz Dilimin Açısını Giriniz");
+      a=input.nextDouble();
+      System.out.println("Dairenin Çevresi: "+2*pi*r);
+      System.out.println("Dairenin Tüm Alanı: "+pi*r*r);
+      System.out.println(a+" Dereceli Daire Diliminin Alanı: "+pi*r*r*a/360);
