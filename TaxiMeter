@@ -1,0 +1,13 @@
+//@author EmreHatip
+//TaxiMeter (minPrice=20, startPrice=10)
+package Giris;
+import java.util.Scanner;
+public class TaxiMeter {
+    public static void main(String[] args) {
+        double km, perkm=2.2, start=10, total;
+        Scanner input=new Scanner(System.in);
+    System.out.println("Mesafeyi Giriniz");
+    km=input.nextDouble();
+    total=start+km*perkm;
+    total=(total<=20)?20:total;
+    System.out.println("ÖDENMESİ GEREKEN TUTAR: "+total+"TL");
