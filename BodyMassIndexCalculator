@@ -1,0 +1,16 @@
+//@author EmreHatip
+package Giris;
+import java.util.Scanner;
+public class BodyMassIndexCalculator {
+    public static void main(String[] args) {
+        double w,h;
+        Scanner input=new Scanner(System.in);
+        System.out.println("BODY MASS INDEX CALCULATOR\nPlease Enter Your Weight (kilogram):");
+        w=input.nextDouble();
+        System.out.println("Please Enter Your Height (meter)");
+        h=input.nextDouble();
+        System.out.println("Your Weight : "+w);
+        System.out.println("Your Height : "+h);
+        System.out.println("Your Body Mass Index :" +w/(h*h));
+    }
+}
