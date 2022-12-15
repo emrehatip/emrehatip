@@ -1,0 +1,24 @@
+//@author EmreHatip
+import java.util.Scanner;
+public class Manav {
+
+        public static void main(String[] args) {
+        double armut,elma,domates,muz,patlican;
+        Scanner input=new Scanner(System.in);
+        System.out.println("HATİP MANAVINA HOŞGELDİNİZ\nÜrünlerimizn Kilo Başına Fiyatları Listededir.\nAldığınız Ürünlerin Ağırlıklarını Giriniz");
+        System.out.println("Armut: 2,14 TL\nElma: 3,67 TL\nDomates: 1,11 TL\nMuz: 0,95 TL\nPatlıcan: 5 TL");
+        System.out.println("-------------------------------------------------------");
+        System.out.println("Ne Kadar Armut Aldınız?");
+        armut=input.nextDouble();
+        System.out.println("Ne Kadar Elma Aldınız?");
+        elma=input.nextDouble();
+        System.out.println("Ne Kadar Domates Aldnız?");
+        domates=input.nextDouble();
+        System.out.println("Ne Kadar Muz Aldınız?");
+        muz=input.nextDouble();
+        System.out.println("Ne Kadar Patlıcan Aldınız?");
+        patlican=input.nextDouble();
+        System.out.println("Toplam Borcunuz:"+((armut*2.14)+(elma*3.67)+(domates*1.11)+(muz*0.95)+(patlican*5))+" TL");
+
+    }
+}
