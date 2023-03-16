@@ -1,0 +1,47 @@
+//author EmreHatip
+import java.util.Scanner;
+
+public class ClassPass {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double mat, geo, phy, che, bio;
+        int passNote = 55, lesson = 5;
+        System.out.println("Enter Maths Point");
+        mat = input.nextDouble();
+        if (mat < 0 || mat > 100) {
+            mat = 0;
+            lesson--;
+        }
+        System.out.println("Enter Geometry Point");
+        geo = input.nextDouble();
+        if (geo < 0 || geo > 100) {
+            geo = 0;
+            lesson--;
+        }
+        System.out.println("Enter Physical Point");
+        phy = input.nextDouble();
+        if (phy < 0 || phy > 100) {
+            phy = 0;
+            lesson--;
+        }
+        System.out.println("Enter Chemical Point");
+        che = input.nextDouble();
+        if (che < 0 || che > 100) {
+            che = 0;
+            lesson--;
+        }
+        System.out.println("Enter Biology Point");
+        bio = input.nextDouble();
+        if (bio < 0 || bio > 100) {
+            bio = 0;
+            lesson--;
+        }
+        double average = (mat + geo + phy + che + bio) / lesson;
+        if (average >= passNote) {
+            System.out.println("Your Average: " + average + "\nCongratulations! You Passed");
+        } else {
+            System.out.println("Your Average: " + average + "\nYou Failed");
+
+        }
+    }
+}
