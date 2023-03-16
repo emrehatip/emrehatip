@@ -1,0 +1,38 @@
+//AccountLogin @author EmreHatip
+import java.util.Scanner;
+
+public class Logi {
+    public static void main(String[] args) {
+        int choose;
+        Scanner input = new Scanner(System.in);
+        String UserName = "emrehatip", Password = "patika", NewPassword;
+        System.out.println("Welcome Hatip's Program");
+        System.out.println("Please Enter Your Username");
+        String LoginUserName = input.next();
+        System.out.println("Please Enter Your Password");
+        String LoginPassword = input.next();
+        if (UserName.equals(LoginUserName) && (Password.equals(LoginPassword))) {
+            System.out.println("Succesfully Logged in");
+
+        } else {
+            System.out.println("Entered Wrong Password or Username!!\nDo You Want Reset Your? \n1=>Yes\n2=>No");
+            choose = input.nextInt();
+            switch (choose) {
+                case 1:
+                    System.out.println("Enter Your New Password");
+                    NewPassword = input.next();
+                    if (NewPassword.equals(Password)) {
+                        System.out.println("Your New Password Cannot Be The Same As Your Old Password");
+                    } else {
+                        System.out.println("Your Password has been changed");
+                    }
+                    break;
+                case 2:
+                    System.out.println("Good Bye");
+                    break;
+                default:
+                    System.out.println("You Entered Incorrectly");
+            }
+        }
+    }
+}
