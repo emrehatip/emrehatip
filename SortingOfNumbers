@@ -1,0 +1,38 @@
+//@author EmreHatip
+//SortingOfNumbers
+
+import java.util.Scanner;
+
+public class NumberSortingProgram {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n1, n2, n3;
+        System.out.println("A:");
+        n1 = input.nextInt();
+        System.out.println("B:");
+        n2 = input.nextInt();
+        System.out.println("C:");
+        n3 = input.nextInt();
+        if (n1 > n2 && n1 > n3) {
+            if (n2 > n3) {
+                System.out.println("A>B>C");
+            } else {
+                System.out.println("A>C>B");
+            }
+        } else if (n2 > n1 && n2 > n3) {
+            if (n1 > n3) {
+                System.out.println("B>A>C");
+            } else {
+                System.out.println("B>C>A");
+            }
+        } else if (n3 > n1 && n3 > n2) {
+            if (n1 > n2) {
+                System.out.println("C>A>B");
+            } else {
+                System.out.println("C>B>A");
+            }
+        }
+    }
+}
+
+
