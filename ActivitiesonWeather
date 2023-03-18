@@ -1,0 +1,29 @@
+//@author EmreHatip
+//ActivitiesOnWeather
+import java.util.Scanner;
+public class Activity {
+    public static void main(String[] args) {
+        int heat;
+        Scanner input=new Scanner(System.in);
+        System.out.println("Please Enter Temperature Value");
+        heat=input.nextInt();
+        if (heat<=5){
+            System.out.println("You Can Go Skiing");
+        }
+        else if (heat>=5 && heat<10){
+            System.out.println("You Can Go To The Cinema");
+        }
+        else if (heat>=10 && heat<=15) {
+            System.out.println("You Can Go On a Picnic or Go To The Cinema");
+        }
+        else if (heat>15 && heat<=25) {
+            System.out.println("You Can Go On a Picnic");
+        }
+        else if (heat>25){
+            System.out.println("You Can Go Swimming");
+            }
+        else {
+            System.out.println("You Entered Wrong Value");
+        }
+    }
+}
