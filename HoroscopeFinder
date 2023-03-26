@@ -64,7 +64,7 @@ public class HoroscopeFinder {
                 } else if (d <= 22) {
                     System.out.println("Leo");
                 } else {
-                    System.out.println("Wrong Entry")
+                    System.out.println("Wrong Entry");
                 }
             }
             if (m == 9) {
